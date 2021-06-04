@@ -120,6 +120,7 @@
     <Content Include="Views\Account\Create.cshtml" />
     <Content Include="Views\Account\Error.cshtml" />
     <Content Include="Views\Main\Main.cshtml" />
+    <Content Include="Views\Main\_MainPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,8 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Kafedra\" />
-    <Folder Include="Views\KafName\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
