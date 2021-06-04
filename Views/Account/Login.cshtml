@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Система проверки курсовых работ и проектов";
+    Layout = "~/Views/Account/_AccountPage.cshtml";
+}
+<!--
+    Форма входа///////////////////////////// -->
+<div class="signin-page">
+
+
+    <div class="container">
+        <div class="wrap-singin">
+            <div class="logo-signin"></div>
+            <h1>АИС «Проверки и учета курсовых работ и проектов»</h1>
+
+            <form action="Verify" class="form-signin" method="post" role="form">
+                <input type="hidden" value="1" name="SemesterID">
+                <input id="UserName" name="UserName" type="text" class="form-control" placeholder="Логин" required="" autofocus="" autocomplete="off">
+                <input id="Password" name="Password" type="password" class="form-control" placeholder="Пароль" required="" autocomplete="off">
+                <div class="checkbox" title="Запомнить этот компьютер на 2 недели">
+                    <label>
+                        <input data-val="true" data-val-required="The Запомнить меня field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">
+                        Запомнить меня
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-block btn-main-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--
+Конец формы входа///////////////////////////// -->
+<!--
+Футер///////////////////////////// -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <h2>АИС «Проверки и учета курсовых работ и проектов»</h2>
+                <p>Система предназначена для ввода данных о курсовых работах и проектах студетов. Для получения доступа к системе необходимо обратиться к заведующему кафедрой.</p>
+                <p>При возникновении проблем в работе системы обращайтесь по указанным номерам телефонов</p>
+            </div>
+            <div class="col-lg-2">
+                <strong>Служба поддержки:</strong><br>
+                <p>Отдел информационных ресурсов (тел. 565)</p>
+            </div>
+        </div>
+        <p class="copyright">© 2015-2021 ФГБОУ ВО «Кубанский государственный аграрный университет имени И. Т. Трубилина».</p>
+    </div>
+</div>
